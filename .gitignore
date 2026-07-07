@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Local/private scan inputs
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Local generated reports
+*.pdf
+!examples/sample-report.pdf
+
+# Local logos and private assets
+logo.png
+*.local.png
+
+# macOS
+.DS_Store
+
+# Development copies
+report.py
+report-github.py
+
+# Extra local test reports
+examples/test-cli-report.pdf
+
+# Temporary development files
+examples/sample-scan.json
+src/skillspector_report/cli-markdown-backup.py
+src/skillspector_report/cli-before-details.py
