@@ -17,7 +17,8 @@ build/
 
 # Local generated reports
 *.pdf
-!examples/sample-report.pdf
+!examples/safe-skill-report.pdf
+!examples/malicious-skill-report.pdf
 
 # Local logos and private assets
 logo.png
