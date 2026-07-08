@@ -11,9 +11,13 @@ SkillSpector Report is an independent companion tool for NVIDIA SkillSpector. It
 
 ## Preview
 
-Example PDF report output:
+Safe report example:
 
-![SkillSpector Report preview](docs/report-preview.png)
+![Safe SkillSpector Report preview](docs/report-preview.png)
+
+Unsafe report example with findings:
+
+![Unsafe SkillSpector Report preview](docs/malicious-report-preview.png)
 
 ## What it does
 
