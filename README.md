@@ -11,13 +11,29 @@ SkillSpector Report is an independent companion tool for NVIDIA SkillSpector. It
 
 ## Preview
 
-Safe report example:
+The examples below show two common report outcomes.
 
-![Safe SkillSpector Report preview](docs/report-preview.png)
+A clean report still includes the full report structure: metadata, executive summary, scanned components, raw SkillSpector JSON, and limitations. Because no issues were found, there is no detailed findings table to review.
 
-Unsafe report example with findings:
+A malicious report includes the same report structure, but also includes a detailed findings table showing each issue, severity, location, confidence, and remediation guidance.
 
-![Unsafe SkillSpector Report preview](docs/malicious-report-preview.png)
+<table>
+  <tr>
+    <td width="50%">
+      <strong>Clean report summary</strong><br>
+      <img src="docs/safe-summary-preview.png" alt="Clean SkillSpector Report summary preview">
+    </td>
+    <td width="50%">
+      <strong>Malicious report findings detail</strong><br>
+      <img src="docs/malicious-findings-preview.png" alt="Malicious SkillSpector Report findings preview">
+    </td>
+  </tr>
+</table>
+
+Full example PDFs:
+
+- [`examples/safe-skill-report.pdf`](examples/safe-skill-report.pdf) — clean report with no findings, scanned components, raw JSON, and limitations
+- [`examples/malicious-skill-report.pdf`](examples/malicious-skill-report.pdf) — report with detailed findings, scanned components, raw JSON, and limitations
 
 ## What it does
 
