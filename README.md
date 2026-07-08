@@ -271,7 +271,7 @@ SkillSpector Report sanitizes common local and temporary source paths, but alway
 
 ## Tested with
 
-- SkillSpector Report 0.1.0
+- SkillSpector Report 0.1.1
 - NVIDIA SkillSpector 2.3.9
 - Python 3.14.6 on macOS
 
