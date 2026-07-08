@@ -43,6 +43,18 @@ Confirm SkillSpector works:
 
     skillspector --help
 
+## Use cases
+
+SkillSpector Report can be used as a local SkillSpector PDF report generator for:
+
+- turning NVIDIA SkillSpector JSON output into a polished PDF report
+- documenting safe and malicious skill scan results
+- sharing scan summaries with non-technical reviewers
+- keeping local audit evidence for AI skill review workflows
+- reviewing skills, packages, repositories, folders, or zip files scanned by SkillSpector
+
+Related phrases: NVIDIA SkillSpector report generator, SkillSpector JSON to PDF, local SkillSpector PDF reports, AI skill security reporting.
+
 ## Quick Start
 
 ### 1. Install NVIDIA SkillSpector
