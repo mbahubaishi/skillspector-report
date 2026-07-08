@@ -139,4 +139,4 @@ NVIDIA SkillSpector performs the security analysis. SkillSpector Report formats 
 
 ## License
 
-Apache-2.0
+MIT
