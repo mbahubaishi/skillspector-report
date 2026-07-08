@@ -590,7 +590,7 @@ def build_pdf(scan_data, args):
     story.append(Paragraph("<b>Raw SkillSpector JSON Findings</b>", styles["Heading2"]))
     story.append(
         Paragraph(
-            "The following section contains the structured SkillSpector JSON output for audit evidence.",
+            "The following section contains the structured SkillSpector JSON output for review evidence.",
             styles["Normal"],
         )
     )

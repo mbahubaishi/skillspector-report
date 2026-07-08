@@ -5,7 +5,7 @@
 
 Generate clean, local PDF reports from NVIDIA SkillSpector scans.
 
-SkillSpector Report is an independent companion tool for NVIDIA SkillSpector. It runs the installed `skillspector` CLI locally, reads SkillSpector JSON output, and turns the scan result into a polished PDF report for review, audit evidence, and internal sharing.
+SkillSpector Report is an independent companion tool for NVIDIA SkillSpector. It runs the installed `skillspector` CLI locally, reads SkillSpector JSON output, and turns the scan result into a polished PDF report for review support, evidence sharing, and internal use.
 
 > This project does not replace NVIDIA SkillSpector and does not perform independent security analysis. Security analysis is performed by the installed SkillSpector CLI.
 
@@ -43,7 +43,7 @@ Full example PDFs:
 - Shows risk score, severity, recommendation, scan mode, coverage, and SkillSpector version
 - Adds a Findings Detail section with severity, location, confidence, and remediation guidance
 - Adds a Scanned Components section
-- Includes raw SkillSpector JSON findings for audit evidence
+- Includes raw SkillSpector JSON findings for review evidence
 - Supports optional company name, generated-by name, email, and logo
 - Sanitizes local source paths in the report output
 
@@ -76,7 +76,7 @@ SkillSpector Report can be used as a local SkillSpector PDF report generator for
 - turning NVIDIA SkillSpector JSON output into a polished PDF report
 - documenting safe and malicious skill scan results
 - sharing scan summaries with non-technical reviewers
-- keeping local audit evidence for AI skill review workflows
+- keeping local review evidence for AI skill review workflows
 - reviewing skills, packages, repositories, folders, or zip files scanned by SkillSpector
 
 Related phrases: NVIDIA SkillSpector report generator, SkillSpector JSON to PDF, local SkillSpector PDF reports, AI skill security reporting.
@@ -162,7 +162,7 @@ Depending on the SkillSpector result, the report may show:
 - `CAUTION` when manual review is recommended
 - `DO NOT INSTALL` when high-risk or critical findings are reported
 
-The PDF is intended to support review and audit evidence. It does not certify that the scanned item is safe.
+The PDF is intended to support review and decision records. It does not certify that the scanned item is safe.
 
 ## Scan mode
 
