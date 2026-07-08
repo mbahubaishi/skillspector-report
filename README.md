@@ -1,5 +1,9 @@
 # SkillSpector Report
 
+[![Security Checks](https://github.com/mbahubaishi/skillspector-report/actions/workflows/security.yml/badge.svg)](https://github.com/mbahubaishi/skillspector-report/actions/workflows/security.yml)
+[![OpenSSF Scorecard](https://github.com/mbahubaishi/skillspector-report/actions/workflows/scorecard.yml/badge.svg)](https://github.com/mbahubaishi/skillspector-report/actions/workflows/scorecard.yml)
+
+
 Generate clean, local PDF reports from NVIDIA SkillSpector scans.
 
 SkillSpector Report is an independent companion tool for NVIDIA SkillSpector. It runs the installed `skillspector` CLI locally, reads SkillSpector JSON output, and turns the scan result into a polished PDF report for review, audit evidence, and internal sharing.
