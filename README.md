@@ -40,6 +40,51 @@ Confirm SkillSpector works:
 
     skillspector --help
 
+## Quick Start
+
+### 1. Install NVIDIA SkillSpector
+
+SkillSpector Report requires NVIDIA SkillSpector to be installed separately:
+
+    uv tool install 'skillspector[mcp] @ git+https://github.com/NVIDIA/skillspector.git'
+
+Check that SkillSpector is available:
+
+    skillspector --help
+
+### 2. Install SkillSpector Report
+
+Clone this repository, then install it locally:
+
+    git clone https://github.com/mbahubaishi/skillspector-report.git
+    cd skillspector-report
+    uv venv
+    source .venv/bin/activate
+    uv pip install -e .
+
+Check that the command is available:
+
+    skillspector-report --help
+
+### 3. Generate a PDF report
+
+Run the tool against a skill folder, zip file, package, or repository path:
+
+    skillspector-report path/to/skill-or-package \
+      --generated-by "Jane Doe" \
+      --email "jane@example.com" \
+      --company "Example Company" \
+      --logo examples/sample-logo.png \
+      --output report.pdf
+
+### 4. Open the report
+
+On macOS:
+
+    open report.pdf
+
+The generated PDF includes an executive summary, findings detail, scanned components, raw SkillSpector JSON findings, and legal limitations.
+
 ## Install SkillSpector Report locally
 
 Clone this repository, then from the project folder run:
@@ -65,6 +110,18 @@ Example with report metadata and a logo:
       --company "Example Company" \
       --logo examples/sample-logo.png \
       --output report.pdf
+
+## What to expect
+
+SkillSpector Report creates a local PDF file at the path passed to `--output`.
+
+Depending on the SkillSpector result, the report may show:
+
+- `LOW RISK` when no significant issues are reported
+- `CAUTION` when manual review is recommended
+- `DO NOT INSTALL` when high-risk or critical findings are reported
+
+The PDF is intended to support review and audit evidence. It does not certify that the scanned item is safe.
 
 ## Scan mode
 
@@ -120,6 +177,41 @@ This report is informational and review-supporting only.
 Security scanners can produce false positives and false negatives. A LOW or SAFE result does not guarantee that a skill, package, repository, or file is secure, safe, compliant, or free from malicious behavior.
 
 Users remain responsible for independent review, testing, and decisions according to their own internal policies.
+
+## Troubleshooting
+
+### `skillspector` command not found
+
+Install NVIDIA SkillSpector first, then restart your terminal:
+
+    uv tool install 'skillspector[mcp] @ git+https://github.com/NVIDIA/skillspector.git'
+
+Then check:
+
+    skillspector --help
+
+### `skillspector-report` command not found
+
+Make sure the virtual environment is active and the project is installed:
+
+    source .venv/bin/activate
+    uv pip install -e .
+
+Then check:
+
+    skillspector-report --help
+
+### The report says `DO NOT INSTALL`
+
+This means SkillSpector reported high-risk or critical findings. Review the Findings Detail section and raw JSON appendix before using the scanned item.
+
+### Dependency findings appear for `reportlab` or `pillow`
+
+SkillSpector may report broad supply-chain warnings for dependency names. Use a Python dependency scanner such as `pip-audit` to check the installed environment for known vulnerable package versions.
+
+### Local paths appear in a report
+
+SkillSpector Report sanitizes common local and temporary source paths, but always review generated PDFs before sharing them externally.
 
 ## Tested with
 
