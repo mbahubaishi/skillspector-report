@@ -219,6 +219,21 @@ Security scanners can produce false positives and false negatives. A LOW or SAFE
 
 Users remain responsible for independent review, testing, and decisions according to their own internal policies.
 
+## Roadmap
+
+Possible future improvements:
+
+- Publish to PyPI for easier installation
+- Add an assistant workflow for Claude Code, Codex, or similar local coding agents
+- Add batch report generation for multiple skills or zip files
+- Add optional HTML report output
+- Add configurable report templates
+- Add summary-only report mode for quick reviews
+- Add CI usage examples for teams that want reports generated during review workflows
+- Improve handling of very large scan outputs
+
+Roadmap items are exploratory and may change based on user feedback.
+
 ## Troubleshooting
 
 ### `skillspector` command not found
