@@ -9,6 +9,14 @@ SkillSpector Report is an independent companion tool for NVIDIA SkillSpector. It
 
 > This project does not replace NVIDIA SkillSpector and does not perform independent security analysis. Security analysis is performed by the installed SkillSpector CLI.
 
+## Disclaimer
+
+This is a personal open source project and is not affiliated with, endorsed by, sponsored by, or supported by NVIDIA or any employer of the maintainer.
+
+The project does not include proprietary code, confidential information, customer data, or internal materials from any employer or third party.
+
+SkillSpector Report is an independent companion tool for working with locally generated NVIDIA SkillSpector scan output.
+
 ## Preview
 
 The examples below show two common report outcomes.
