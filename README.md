@@ -45,15 +45,15 @@ Full example PDFs:
 
 ## What it does
 
-- Runs NVIDIA SkillSpector locally
-- Uses SkillSpector JSON output for structured report generation
-- Generates a PDF report with an executive summary
+- Uses the locally installed NVIDIA SkillSpector CLI to scan AI skills
+- Generates structured PDF reports from SkillSpector scan results
+- Includes an executive summary and detailed findings
 - Shows risk score, severity, recommendation, scan mode, coverage, and SkillSpector version
-- Adds a Findings Detail section with severity, location, confidence, and remediation guidance
-- Adds a Scanned Components section
-- Includes raw SkillSpector JSON findings for review evidence
+- Includes finding severity, location, confidence, and remediation guidance
+- Includes a scanned components section
+- Preserves the original SkillSpector JSON findings for review
 - Supports optional company name, generated-by name, email, and logo
-- Sanitizes local source paths in the report output
+- Sanitizes local source paths before generating the report
 
 ## What it does not do
 
